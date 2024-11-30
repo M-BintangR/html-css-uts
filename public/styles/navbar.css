@@ -1,0 +1,75 @@
+/*NAVBAR*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 15px 10px;
+  background-color: var(--opacity-black);
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  margin-left: 12px;
+}
+
+.brand .title {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  color: var(--primary);
+}
+
+.brand p {
+  font-size: 1rem;
+}
+
+ul {
+  display: block;
+}
+
+.menus {
+  align-self: center;
+}
+
+.menus ul {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  list-style: none;
+  margin-left: 2rem;
+  padding: 0;
+}
+
+.menus li a {
+  text-decoration-line: none;
+  font-size: 1.2rem;
+  color: var(--primary);
+  padding: 10px;
+  border-radius: 12px;
+  transition: 200ms;
+}
+
+.menus li a:hover {
+  background: var(--primary);
+  color: var(--black);
+}
+
+.brand .pretitle {
+  font-weight: semibold;
+  padding: 0;
+  margin: 0;
+}
+
+.brand .pretitle b {
+  color: var(--primary);
+}

@@ -1,0 +1,213 @@
+/*CONTAINER*/
+
+.container {
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow: hidden;
+  background-color: var(--black);
+  color: var(--primary);
+}
+
+.container .welcome p {
+  color: var(--white);
+}
+
+.welcome {
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note h1 {
+  font-size: 3rem;
+}
+
+.note p {
+  font-size: 1.5rem;
+}
+
+.pictures {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.welcome .pictures img {
+  margin: 0 3rem;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+/*TITLE CONTENT*/
+.title-content {
+  padding: 5px;
+  margin-bottom: 2rem;
+}
+
+.title-content h1 {
+  color: var(--black);
+  background-color: var(--primary);
+  padding: 10px;
+  display: inline;
+  border-radius: 13px;
+}
+
+.burger-menus {
+  padding: 3px;
+  border: 2px solid var(--white);
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  align-self: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.burger-menus div {
+  background-color: var(--primary);
+  width: 30px;
+  height: 3px;
+  align-self: center;
+}
+
+/* FORM */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.registration {
+  display: flex;
+  justify-content: end;
+}
+
+.form-registration {
+  width: 50%;
+  background-color: rgba(46, 46, 46, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 100px;
+}
+
+.form-registration h1 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  color: var(--black);
+}
+
+.button-submit {
+  margin-top: 20px;
+  padding: 0.7rem;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--black);
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.button-submit:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+/*RESPONSEIVE*/
+
+/*Mobile Device */
+@media (max-width: 768px) {
+  nav ul li {
+    display: none;
+  }
+
+  .navbar .brand .title {
+    font-size: 1.5rem;
+    margin-top: 2px;
+  }
+
+  .note h1 {
+    font-size: 20px;
+  }
+
+  .note p {
+    font-size: 10px;
+  }
+
+  .welcome .pictures img {
+    margin: 0 3rem;
+    overflow: hidden;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+  }
+
+  .title-content {
+    font-size: 12px;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+
+  .form-registration {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  .container {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+}
+
+/*Tablet Device */
+@media (min-width: 768px) and (max-width: 1024px) {
+  nav ul li {
+    display: none;
+  }
+
+  .note h1 {
+    font-size: 30px;
+  }
+
+  .note p {
+    font-size: 20px;
+  }
+
+  .welcome .pictures img {
+    margin: 0 3rem;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
+}
+
+/* Desktop Device */
+@media (min-width: 1024px) {
+  .burger-menus {
+    display: none;
+  }
+}
